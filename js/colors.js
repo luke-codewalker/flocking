@@ -28,5 +28,11 @@ const colors = {
     fill: '#ffd626',
     stroke: '#333',
     clear: 'rgba(248, 160, 172, 0.35)'
+  },
+  skybirds: {
+    bg: '#98c3f0',
+    fill: '#6b5f53',
+    stroke: '#2d2823',
+    clear: 'rgba(152, 195, 240, 0.35)'
   }
 }
