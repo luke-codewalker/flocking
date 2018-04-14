@@ -53,13 +53,13 @@ function draw() {
 
   for (const vehicle of vehicles) {
     if(vehicle.position.x > canvas.width + vehicle.length) {
-      vehicle.position.x = 0;
+      vehicle.position.x = - vehicle.length;
     } else if (vehicle.position.x < 0 - vehicle.length) {
-      vehicle.position.x = canvas.width;
+      vehicle.position.x = canvas.width + vehicle.length;
     } else if (vehicle.position.y > canvas.height + vehicle.length) {
-      vehicle.position.y = 0;
+      vehicle.position.y = - vehicle.length;
     } else if (vehicle.position.y < 0 - vehicle.length) {
-      vehicle.position.y = canvas.height;
+      vehicle.position.y = canvas.height + vehicle.length;
     }
 
     vehicle.applyForce(vehicle.cohesion(vehicles).mult(cohesionInput.value));
