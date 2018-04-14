@@ -1,0 +1,60 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+html, body, canvas {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  padding: 1rem;
+
+  border-radius: 6px;
+  background-color: rgba(200, 200, 200, 0.75);
+  box-shadow: 3px 3px 6px rgba(50, 50, 50, 0.6);
+  transition: transform 1s;
+}
+
+.menu h2 {
+  margin: 0.25rem 0 0 0;
+}
+
+.moved {
+  transform: translateY(-110%);
+}
+
+.control {
+  display: grid;
+  margin-bottom: 0.5rem;
+}
+
+.info {
+  margin: 0.125rem;
+  font-size: 0.75rem;
+}
+
+#clear {
+  margin: 1rem auto 0 auto;
+  padding: 0.25rem 0;
+
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+
+  border: 1px solid #333;
+  border-radius: 3px;
+
+  background-color: rgba(200, 200, 200, 0.75);
+  cursor: pointer;
+}
+
+#clear:hover {
+  background-color: rgba(180, 180, 180, 1);
+}
