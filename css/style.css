@@ -62,7 +62,7 @@ canvas {
   background-color: #fff;
 }
 
-@media (max-height: 600px) {
+@media (max-height: 720px) {
   .menu p {
     margin: 0.25rem;
   }
