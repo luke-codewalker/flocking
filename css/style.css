@@ -1,9 +1,11 @@
 :root {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
 }
 
-html, body, canvas {
+html,
+body,
+canvas {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -58,4 +60,25 @@ html, body, canvas {
 
 #clear:hover {
   background-color: #fff;
+}
+
+@media (max-height: 600px) {
+  .menu p {
+    margin: 0.25rem;
+  }
+
+  .info {
+    font-size: 0.65rem;
+  }
+
+  .info span {
+    margin-left: 0.5rem;
+  }
+
+  .control,
+  .info-wrapper,
+  .info {
+    display: flex;
+    justify-content: space-between;
+  }
 }
